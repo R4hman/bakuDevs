@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="section-home">
+    <section class="section-home-course">
       <div class="container">
         <header class="header-home">
           <div class="header-left">
@@ -17,8 +17,7 @@
             </div>
             <div class="kurs">
               <img src="img/menu.png" alt="" />
-              <a href="courses.html">Kurslar</a>
-              <!-- <span>Kurslar</span> -->
+              <span>Kurslar</span>
             </div>
           </div>
           <div class="header-right">
@@ -45,40 +44,18 @@
             </ul>
           </div>
         </header>
-        <div class="home">
-          <div class="home-left">
-            <h1 class="main-heading">
-              <span class="yellow-header">Proqramlaşdırmanı</span> onlayn olaraq
-              bizdən öyrənin
-            </h1>
-            <button class="btn-home">
-              Kurslar
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-          </div>
-          <div class="home-right">
-            <div class="circles">
-              <img src="img/circles.png" alt="" />
-            </div>
-            <div class="img-container">
-              <img src="img/girl.png" alt="" />
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="waves">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill="#ffff"
-            fill-opacity="1"
-            d="M0,160L48,149.3C96,139,192,117,288,101.3C384,85,480,75,576,80C672,85,768,107,864,117.3C960,128,1056,128,1152,117.3C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-        </svg>
+      <div class="course-covering">
+        <h1>Kurslar</h1>
+        <ul>
+          <li><a href="">Əsas səhifə </a></li>
+          <li><a href="">Kurslar </a></li>
+        </ul>
       </div>
     </section>
     <section class="section-courses">
-      <header class="header-courses">
-        <h1>Populyar Kurslar</h1>
+      <header class="header-courses-extended">
+        <!-- <h1>Populyar Kurslar</h1> -->
         <div class="category">
           <ul>
             <li>
@@ -321,82 +298,116 @@
             </a>
           </div>
         </div>
-      </div>
-
-      <div class="btn-flex">
-        <button class="btn-center">
-          Bütün Kurslar
-          <ion-icon class="btn-icon" name="chevron-forward-outline"></ion-icon>
-        </button>
-      </div>
-    </section>
-
-    <section class="section-featured">
-      <div class="container">
-        <h1 class="featured-title">
-          BakuDevs ilə istədiyiniz biliklərə sahib olun!
-        </h1>
-        <h3 class="featured-subtitle">
-          Nə üçün tədrisinizi məhz bizdə keçməlisiniz? Bunun üçün ən azı dörd
-          səbəb var:
-        </h3>
-        <div class="featured-flex">
-          <div class="featured-left">
-            <div class="featured-left-first">
-              <div class="featured">
-                <ion-icon
-                  class="featured-icon"
-                  name="camera-outline"
-                ></ion-icon>
-                <h4 class="featured-left-title">Sərfəli qiymət</h4>
-                <p class="featured-text">
-                  Ayda cəmi 10 AZN ödəniş etməklə saytdımızdaki bütün kurslar
-                  sizin üçün tam açıq olacaq!
-                </p>
-              </div>
-              <div class="featured">
-                <ion-icon
-                  class="featured-icon"
-                  name="videocam-outline"
-                ></ion-icon>
-                <h4 class="featured-left-title">Video və Yazılı format</h4>
-                <p class="featured-text">
-                  Bizim saytımızda siz dərslərə həm video formatında, həm də
-                  yazılı izah formatında rahat baxa bilərsiniz
-                </p>
-              </div>
-            </div>
-            <div class="featured-left-second">
-              <div class="featured">
-                <ion-icon class="featured-icon" name="list-outline"></ion-icon>
-                <h4 class="featured-left-title">Tapşırıqlar və Layihələr</h4>
-                <p class="featured-text">
-                  Hər dərsin və kursun sonunda sizə tapşırıqlar və layihələr
-                  veriləcək. Siz onları yerinə yetirərək, praktik təcrübənizi
-                  artıracaqsınız və portfolionuzu yaratmış olacaqsınız
-                </p>
-              </div>
-              <div class="featured">
-                <ion-icon
-                  class="featured-icon"
-                  name="receipt-outline"
-                ></ion-icon>
-                <h4 class="featured-left-title">Sertifikat veririk</h4>
-                <p class="featured-text">
-                  Siz bizim saytımızda hər hansı bir kursu bitirdikdən sonra,
-                  avtomatik olaraq BakuDevs sertifikatı əldə edəcəksiniz. Bu
-                  sertifikat sizin bilik və bacarıqlarınızı təsdiq edəcək
-                </p>
-              </div>
+        <div class="course">
+          <div class="course-img-container">
+            <img class="course-img" src="img/IOS.png" alt="javascript-img" />
+          </div>
+          <div class="course-info">
+            <h4 class="course-title">Backend</h4>
+            <div class="course-hours">
+              <ion-icon
+                class="play-icon"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+              <span class="course-hours">8 dərs</span>
             </div>
           </div>
-          <div class="featured-right">
-            <div class="featured-right-img">
-              <img src="img/boy.png" alt="" />
+          <div class="divider">
+            <hr />
+          </div>
+          <div class="main-info">
+            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+            <a href="">
+              <ion-icon
+                class="play-icon-secondary"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-img-container">
+            <img class="course-img" src="img/css.png" alt="javascript-img" />
+          </div>
+          <div class="course-info">
+            <h4 class="course-title">Frontend</h4>
+            <div class="course-hours">
+              <ion-icon
+                class="play-icon"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+              <span class="course-hours">18 dərs</span>
             </div>
-            <div class="featured-bottom-img">
-              <img src="img/shape-1.svg" alt="" />
+          </div>
+          <div class="divider">
+            <hr />
+          </div>
+          <div class="main-info">
+            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+            <a href="">
+              <ion-icon
+                class="play-icon-secondary"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-img-container">
+            <img class="course-img" src="img/UI.png" alt="javascript-img" />
+          </div>
+          <div class="course-info">
+            <h4 class="course-title">UI/UX</h4>
+            <div class="course-hours">
+              <ion-icon
+                class="play-icon"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+              <span class="course-hours">8 dərs</span>
             </div>
+          </div>
+          <div class="divider">
+            <hr />
+          </div>
+          <div class="main-info">
+            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+            <a href="">
+              <ion-icon
+                class="play-icon-secondary"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="course">
+          <div class="course-img-container">
+            <img
+              class="course-img"
+              src="img/javascript2.png"
+              alt="javascript-img"
+            />
+          </div>
+          <div class="course-info">
+            <h4 class="course-title">UI/UX</h4>
+            <div class="course-hours">
+              <ion-icon
+                class="play-icon"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+              <span class="course-hours">18 dərs</span>
+            </div>
+          </div>
+          <div class="divider">
+            <hr />
+          </div>
+          <div class="main-info">
+            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+            <a href="">
+              <ion-icon
+                class="play-icon-secondary"
+                name="play-skip-back-circle-outline"
+              ></ion-icon>
+            </a>
           </div>
         </div>
       </div>
