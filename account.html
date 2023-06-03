@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesec.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal-relative">
+      <div class="modal-overlay">
+        <div class="modal">
+          <h1>modal</h1>
+        </div>
+      </div>
+      <section class="section-home header-shadow">
+        <div class="container">
+          <header class="header-home">
+            <div class="header-left">
+              <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="" />
+              </a>
+              <a href="courses.html" class="kurs">
+                <img src="img/menu.png" alt="" />
+                <span>Kurslar</span>
+              </a>
+            </div>
+            <div class="header-right">
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="img/heart.png" alt="" />
+                    <span>İstək siyahısı</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="signin.html" class="btn">
+                    <img src="img/signin.png" alt="" />
+                    <span>Daxil ol</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="signup.html" class="btn">
+                    <img src="img/signup.png" alt="" />
+                    <span>Qeydiyyatdan keç</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-menu">
+              <ion-icon name="grid-outline"></ion-icon>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <section class="section-account">
+        <div class="container">
+          <div class="personal">
+            <div><h1>Şəxsi kabinet</h1></div>
+            <div>
+              <ul>
+                <li class="changePageButton active" data-id="profile">
+                  <a href="">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span>Profil</span>
+                  </a>
+                </li>
+                <li class="changePageButton" data-id="subscribe">
+                  <a href="">
+                    <ion-icon name="subway-outline"></ion-icon>
+                    <span>Abunəlik</span>
+                  </a>
+                </li>
+                <li class="changePageButton" data-id="payment">
+                  <a href="">
+                    <ion-icon name="wallet-outline"></ion-icon>
+                    <span>Qəbzlər</span>
+                  </a>
+                </li>
+                <li class="changePageButton" data-id="wishlist">
+                  <a href="">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>İstək siyahısı</span>
+                  </a>
+                </li>
+                <li class="changePageButton" data-id="logout">
+                  <a href="">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    <span>Çıxış</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div data-id="profile" class="profile">
+          <div class="profile-left">
+            <div>
+              <label for="">Adınız və soyadınız</label>
+              <input type="text" id="" placeholder="Adınız soyadınız" />
+            </div>
+          </div>
+          <div class="profile-right"></div>
+        </div> -->
+          <div class="profileContent rightMenu">
+            <div class="profile-flex-content">
+              <div class="profileContent-left">
+                <div class="profile-flex">
+                  <label for="name"
+                    >Adınız və soyadınız
+                    <input type="text" id="name" placeholder="Aygün Əliyeva"
+                  /></label>
+
+                  <label for="email"
+                    >E-mail
+                    <input
+                      type="text"
+                      id="email"
+                      placeholder="aygunaliyeva@gmail.com"
+                  /></label>
+                </div>
+                <div class="query-btn">
+                  <a class="reset-link" href="account.html"
+                    >Yadda saxla
+
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+              <div class="profileContent-left">
+                <div class="profile-flex">
+                  <label for="password"
+                    >Mövcud şifrə <input type="password" id="password"
+                  /></label>
+
+                  <label for="confirm"
+                    >Yeni şifrə <input type="password" id="confirm"
+                  /></label>
+                  <label for="confirm-repeat"
+                    >Yeni şifrənin təkrarı
+                    <input type="password" id="confirm-repeat"
+                  /></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="abunelikContent rightMenu">
+            <div class="profile-flex-content">
+              <div class="profileContent-left">
+                <div class="info">
+                  <h1>Siz abunə deyilsiniz</h1>
+                </div>
+                <p class="subscribe-info">
+                  <ion-icon name="information-circle-outline"></ion-icon> Aylıq
+                  abunə haqqı 10 AZN təşkil edir.
+                </p>
+
+                <div class="query-btn">
+                  <a class="reset-link refresh" href=""
+                    >Yenilə
+
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qebzlerContent rightMenu"><h1>qebzler</h1></div>
+          <div class="istekContent rightMenu"><h1>istek</h1></div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-first">
+            <img src="img/logoSecond.png" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <ul class="footer-top-secondary">
+            <li><a href="">Frontend</a></li>
+            <li><a href="">Backend</a></li>
+            <li><a href="">UI/UX</a></li>
+          </ul>
+          <ul class="footer-top-tertiary">
+            <li><a href="index.html">Əsas səhifə</a></li>
+            <li><a href="courses.html">Kurslar</a></li>
+            <li><a href="aboutUs.html">Haqqımızda</a></li>
+            <li><a href="">Əlaqə </a></li>
+          </ul>
+
+          <div class="footer-top-fourth">
+            <p>Yeniliklərdən xəbərdar olmaq üçün Qeydiyyatdan keçin.</p>
+            <form action="" class="form">
+              <div class="input">
+                <label for="email"></label>
+                <input
+                  class="email-input"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <button>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <hr />
+          <div class="footer-bottom-flex">
+            <p class="author-first">
+              © 2022 BakuDevs.net. Bütün hüquqlar qorunur
+            </p>
+            <p class="author-second">Site by JEDAİ. Created by Rahman</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

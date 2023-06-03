@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .header-home li {
@@ -59,6 +59,10 @@ body {
   justify-content: space-between;
   gap: 13rem;
   cursor: pointer;
+}
+
+.header-menu {
+  display: none;
 }
 
 .kurs {
@@ -78,17 +82,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 7rem; */
 }
 
 .header-right ul li:not(:last-child) a span {
   font-size: 16px;
 }
-
-/* .header-right ul div li:last-child a {
-  font-size: 16px;
-  
-} */
 
 .header-right ul .btns {
   display: flex;
@@ -159,7 +157,6 @@ body {
   border: none;
   width: 12rem;
   height: 4.5rem;
-  /* padding: 13px 0; */
   display: inline-block;
   background-color: var(--main-color);
   border-radius: var(--main-border-radius);
@@ -223,7 +220,6 @@ body {
   padding: 8rem 0;
   max-width: 82rem;
   margin: 0 auto;
-  /* background-color: rgb(230, 177, 177); */
 }
 
 .header-courses {
@@ -281,7 +277,6 @@ body {
   background-color: white;
   flex-direction: column;
   gap: 20px;
-  /* align-items: center; */
   box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.09);
   border-radius: 20px;
 }
@@ -323,6 +318,7 @@ body {
 }
 
 .divider {
+  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -492,14 +488,12 @@ body {
 }
 .featured-right-img::before {
   content: url(img/groupShape1.svg);
-  /* display: inline-block; */
   position: absolute;
   top: 60;
   left: -30px;
 }
 .featured-right-img::after {
   content: url(img/groupShape2.svg);
-  /* display: inline-block; */
   position: absolute;
   right: 320px;
   top: -10px;
@@ -528,10 +522,10 @@ body {
 
 .footer {
   background: url(img/footerBg.png);
-  height: 425px;
+  height: auto;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 8rem 0 3rem 0;
+  padding: 3rem 0 1rem 0;
   z-index: -1;
 }
 
@@ -584,13 +578,13 @@ body {
 
 .footer-top-fourth p {
   font-family: "Mulish", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
   color: white;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .form {
@@ -598,8 +592,6 @@ body {
   position: relative;
   align-items: center;
   justify-content: space-between;
-}
-.input {
 }
 
 .email-input {
@@ -664,6 +656,15 @@ body {
   opacity: 0.8;
   background-size: cover;
   margin-top: -1rem;
+  position: relative;
+}
+
+.bg-color {
+  background-color: #008d96;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
 .course-covering h1 {
   font-family: "Mulish", sans-serif;
@@ -698,6 +699,52 @@ body {
 
 .section-single-ios {
   padding: 3rem 0;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.share {
+  background: #dd4b39;
+  color: white;
+}
+
+.whatsapp {
+  background: #8ee28a;
+  color: white;
+}
+
+.instagram {
+  background: rgb(193, 53, 132);
+  color: white;
 }
 
 .ios-title {
@@ -750,14 +797,12 @@ body {
 
 .about {
   display: flex;
-  align-items: center;
   gap: 100px;
   margin-top: 1rem;
 }
 
 .about-left {
   flex: 2;
-  /* background-color: black; */
 }
 
 .about-title {
@@ -778,7 +823,7 @@ body {
   text-align: left;
 }
 
-.about-left p {
+.about p {
   color: #939393;
   font-family: "Mulish", sans-serif;
   font-size: 18px;
@@ -790,7 +835,280 @@ body {
 
 .about-right {
   flex: 1;
-  background-color: red;
+}
+
+.about h2 {
+  font-family: "Mulish", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #008d96;
+  margin-bottom: 35px;
+  margin-top: 26px;
+}
+
+.about h4 {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.video-format iframe {
+  margin-left: 3rem;
+  margin-bottom: 22px;
+  width: 560px;
+  height: 316px;
+}
+
+.video-format p,
+.android-development p {
+  line-height: 24px;
+}
+
+.android-development img {
+  width: 686px;
+  height: 457px;
+  margin-bottom: 22px;
+}
+
+.forLoop {
+  background: linear-gradient(0deg, #cae6e8, #cae6e8),
+    linear-gradient(0deg, #ecf8f9, #ecf8f9);
+  width: 579px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.forLoop p {
+  padding: 18px 0 18px 34px;
+}
+
+.about hr {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.document-icon {
+  width: 16px;
+  height: 20px;
+}
+
+.document-and-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 30px;
+}
+
+.about-left--bottom {
+  background: #fbfbfb !important;
+  padding: 18px 27px;
+  border-radius: 8px;
+  border: 1px solid #ece2cb;
+  margin-bottom: 20px;
+}
+
+.about-left--bottom h4 {
+  color: #be870d;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about-left--bottom h4:first-of-type {
+  margin-bottom: 2rem;
+}
+
+.about-left--bottom > p {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1b2221;
+}
+
+.about-left--bottom button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #be870d;
+  border: 1px solid #be870d;
+  background-color: transparent;
+  padding: 7px 27px;
+  border-radius: 70px;
+  margin-top: 12px;
+  margin-bottom: 34px;
+}
+
+.about-left--bottom button p {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.forLoop-red {
+  background: #35280a !important;
+}
+
+.about-right h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.course-lessons {
+  background: #ffffff;
+  opacity: 0.8;
+  border: 1px solid #dfdbdb;
+  padding: 15px 19px;
+}
+
+.course-lessons:first-of-type {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.course-lessons:last-of-type {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.course-lessons--top {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.course-lessons--top div {
+  margin-top: 5px;
+}
+
+.course-lessons:nth-child(6) input,
+.course-lessons:nth-child(7) input {
+  display: none;
+}
+.course-lessons:nth-child(6) input,
+.course-lessons:nth-child(7) input {
+  display: none;
+}
+
+.course-lessons input {
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+}
+
+.course-lessons label {
+  font-family: "Mulish", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1b2221;
+  display: inline;
+}
+
+.closed {
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.course-lessons div:nth-of-type(2) {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.lesson-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.course-lessons span {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.lock-icon {
+  width: 19px;
+  height: 19px;
+  margin-right: 16px;
+}
+
+.closed-course {
+  padding: 24px 19px;
+  background-color: #fff8f8;
+  display: flex;
+  gap: 0.5rem;
+  border: 1px solid #dfdbdb;
+}
+.closed-course--right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.closed-course--right span {
+  font-family: "Mulish";
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #1b2221;
+}
+.closed-course--right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.closed-course--right div {
+  margin-left: -90px;
+}
+.closed-course:last-child .closed-course--right div {
+  margin-left: -15rem;
+}
+
+.closed-course:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.alike-courses--title {
+  font-family: "Mulish", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: -38px;
+  margin-top: 35px;
 }
 
 /*Media Queries */

@@ -46,10 +46,28 @@
         </header>
       </div>
       <div class="course-covering">
+        <div class="bg-color"></div>
         <h1>Android Program Development</h1>
       </div>
     </section>
     <section class="section-single-ios">
+      <div class="icon-bar">
+        <a href="#" class="share"
+          ><ion-icon name="share-social-outline"></ion-icon
+        ></a>
+        <a href="#" class="facebook"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <a href="#" class="instagram"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="#" class="whatsapp"
+          ><ion-icon name="logo-whatsapp"></ion-icon
+        ></a>
+        <a href="#" class="twitter"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+      </div>
       <div class="container">
         <div class="ios-title">
           <div class="ios-title-top">
@@ -74,13 +92,13 @@
                 <span class="course-hours">18 dərs</span>
               </div>
             </div>
-            <div class="divider">
-              <hr />
-            </div>
           </div>
         </div>
         <div class="about">
           <div class="about-left">
+            <div class="divider">
+              <hr />
+            </div>
             <div class="about-title">
               <img src="img/android2.jpg" alt="" />
               <h1>
@@ -93,16 +111,415 @@
               sed turpis risus molestie auctor vel. Iaculis augue diam tempus
               aliquet eu, pulvinar feugiat.
             </p>
+            <div class="video-format">
+              <h2>Videodərs</h2>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gJ42W-YU_GE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cumque, veritatis sint? Saepe fuga aspernatur nostrum accusamus,
+                iusto laboriosam ducimus fugit non velit neque doloribus quo
+                nemo recusandae nam consequuntur quos!
+              </p>
+            </div>
+            <div class="android-development">
+              <h2>Android Development</h2>
+              <img src="img/phone.jpg" alt="" />
+              <p>
+                В языке PHP, как и в большинстве других языков, существует 3
+                основных вида циклов. Каждый из них выполняет одну и ту же роль,
+                но записывается по-разному. Рассмотрим все три цикла.
+              </p>
+            </div>
+            <h2>Цикл For</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+              sed turpis risus molestie auctor vel. Iaculis augue diam tempus
+              aliquet eu, pulvinar feugiat. Suscipit non viverra dignissim dolor
+              augue morbi
+            </p>
+            <div class="forLoop">
+              <p>
+                for ($i = 0; $i < 10; $i++) <br />
+                echo $i;
+              </p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+              sed turpis risus molestie auctor vel. Iaculis augue diam tempus
+              aliquet eu, pulvinar feugiat. Suscipit non viverra dignissim dolor
+              augue morbi
+            </p>
+            <div class="forLoop">
+              <p>
+                $i = 1; // Создание переменной <br />
+                while ($i <= 10) { // Здесь только условие <br />
+                echo $i; <br />
+                $i++; // Увеличение переменной }
+              </p>
+            </div>
+            <h2>Исходный код</h2>
+            <h4>Операторы в циклах</h4>
+            <div class="forLoop">
+              <p>
+                for($el = 100; $el > 10; $el /= 2) { <br />
+                if($el < 15) <br />
+                break; <br />
+
+                if($el % 2 == 0) <br />
+                continue; <br />
+
+                echo $el.; <br />
+                }
+              </p>
+            </div>
+            <h4>Вывод массива</h4>
+            <div class="forLoop">
+              <p>
+                $list = [5, 7, 3, 8, "some", 45.7]; <br />
+
+                for($i = 0; $i < count($list); $i++) <br />
+                echo "Element $i: $list[$i]";
+              </p>
+            </div>
+            <hr />
+            <div class="document-and-title">
+              <ion-icon
+                class="document-icon"
+                name="document-outline"
+              ></ion-icon>
+              <h4>Задание к уроку</h4>
+            </div>
+            <div class="about-left--bottom">
+              <h4>Вывести в цикле</h4>
+              <p>
+                Выведите столбец чисел от 16 до 23 с пропуском числа 21.
+                Используйте цикл for, а также сделайте тоже самое с циклом
+                while.
+              </p>
+              <button>
+                <span>Cavab</span>
+                <ion-icon name="caret-up-outline"></ion-icon>
+              </button>
+              <h4>Код для цикла for:</h4>
+              <div class="forLoop forLoop-red">
+                <p>
+                  for ($i = 16; $i <= 23; $i++) { <br />
+                  if ($i == 21) <br />
+                  continue; <br />
+
+                  echo $i; <br />
+                  }
+                </p>
+              </div>
+              <h4>Код для цикла for:</h4>
+              <div class="forLoop forLoop-red">
+                <p>
+                  $i = 16; <br />
+                  while ($i <= 23) { <br />
+                  if ($i == 21) { <br />
+                  $i++; <br />
+                  continue; <br />
+                  } <br />
+                  <br />
+
+                  echo $i; <br />
+                  $i++; <br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="about-left--bottom">
+              <h4>Вывести в цикле</h4>
+              <p>
+                Выведите столбец чисел от 16 до 23 с пропуском числа 21.
+                Используйте цикл for, а также сделайте тоже самое с циклом
+                while.
+              </p>
+              <button>
+                <span>Cavab</span>
+                <ion-icon name="caret-up-outline"></ion-icon>
+              </button>
+            </div>
+            <div class="about-left--bottom">
+              <h4>Вывести в цикле</h4>
+              <p>
+                Выведите столбец чисел от 16 до 23 с пропуском числа 21.
+                Используйте цикл for, а также сделайте тоже самое с циклом
+                while.
+              </p>
+              <button>
+                <span>Cavab</span>
+                <ion-icon name="caret-up-outline"></ion-icon>
+              </button>
+            </div>
           </div>
           <div class="about-right">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            inventore excepturi distinctio ut consectetur fugit voluptates optio
-            ratione laborum, officia illum praesentium ipsam unde exercitationem
-            est eveniet neque? Praesentium, pariatur.
+            <h1>Kursun dərsləri</h1>
+
+            <div class="course-lessons" data-id="1">
+              <div class="course-lessons--top">
+                <div><input type="checkbox" id="firstInput" /></div>
+                <label for="firstInput"
+                  >#1 - Creating a chat program on Android</label
+                >
+              </div>
+              <div>
+                <ion-icon class="lesson-icon" name="time-outline"></ion-icon>
+                <span>12 dəq</span>
+              </div>
+            </div>
+            <div class="course-lessons" data-id="2 ">
+              <div class="course-lessons--top">
+                <div><input type="checkbox" id="secondInput" /></div>
+                <label for="secondInput"
+                  ># 2 - Firebase verilənlər bazasına qoşulma</label
+                >
+              </div>
+              <div>
+                <ion-icon class="lesson-icon" name="time-outline"></ion-icon>
+                <span>20 dəq</span>
+              </div>
+            </div>
+            <div class="course-lessons" data-id="3">
+              <div class="course-lessons--top">
+                <div><input type="checkbox" id="thirdInput" /></div>
+                <label for="thirdInput">#3 - Proqram dizaynını yaradın</label>
+              </div>
+              <div>
+                <ion-icon class="lesson-icon" name="time-outline"></ion-icon>
+                <span>20 dəq</span>
+              </div>
+            </div>
+            <div class="course-lessons" data-id="4">
+              <div class="course-lessons--top">
+                <div>
+                  <input type="checkbox" id="fourthInput" />
+                </div>
+                <label for="fourthInput"
+                  >#4 - Verilənlər bazası ilə işləmək və yazışmalarla söhbət
+                  yaratmaq</label
+                >
+              </div>
+              <div>
+                <ion-icon class="lesson-icon" name="time-outline"></ion-icon>
+                <span>20 dəq</span>
+              </div>
+            </div>
+            <div class="closed-course">
+              <div class="closed-course--left">
+                <ion-icon
+                  class="lock-icon"
+                  name="lock-closed-outline"
+                ></ion-icon>
+              </div>
+              <div class="closed-course--right">
+                <span>#5 – Mesaj dizaynı</span>
+                <div>
+                  <ion-icon class="lesson-icon" name="time-outline"></ion-icon>
+                  <span>20 dəq</span>
+                </div>
+              </div>
+            </div>
+            <div class="closed-course">
+              <div class="closed-course--left">
+                <ion-icon
+                  class="lock-icon"
+                  name="lock-closed-outline"
+                ></ion-icon>
+              </div>
+              <div class="closed-course--right">
+                <span>#6 - Android Proqramına Emoji əlavə etmək</span>
+                <div>
+                  <ion-icon class="lesson-icon" name="time-outline"></ion-icon>
+                  <span>20 dəq</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="alike-courses">
+      <div class="container">
+        <h1 class="alike-courses--title">Oxşar kurslar</h1>
+        <div class="courses">
+          <div class="course">
+            <div class="course-img-container">
+              <img class="course-img" src="img/js.png" alt="javascript-img" />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Frontend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">18 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-img-container">
+              <img
+                class="course-img"
+                src="img/backend.png"
+                alt="javascript-img"
+              />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Backend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">20 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-img-container">
+              <img class="course-img" src="img/UX.png" alt="javascript-img" />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Frontend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">23 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="course">
+            <div class="course-img-container">
+              <img
+                class="course-img"
+                src="img/android.png"
+                alt="javascript-img"
+              />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Backend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">18 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top-first">
+            <img src="img/logoSecond.png" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <ul class="footer-top-secondary">
+            <li><a href="">Frontend</a></li>
+            <li><a href="">Backend</a></li>
+            <li><a href="">UI/UX</a></li>
+          </ul>
+          <ul class="footer-top-tertiary">
+            <li><a href="index.html">Əsas səhifə</a></li>
+            <li><a href="courses.html">Kurslar</a></li>
+            <li><a href="aboutUs.html">Haqqımızda</a></li>
+            <li><a href="">Əlaqə </a></li>
+          </ul>
+
+          <div class="footer-top-fourth">
+            <p>Yeniliklərdən xəbərdar olmaq üçün Qeydiyyatdan keçin.</p>
+            <form action="" class="form">
+              <div class="input">
+                <label for="email"></label>
+                <input
+                  class="email-input"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <button>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <hr />
+          <div class="footer-bottom-flex">
+            <p class="author-first">
+              © 2022 BakuDevs.net. Bütün hüquqlar qorunur
+            </p>
+            <p class="author-second">Site by JEDAİ. Created by Rahman</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -111,5 +528,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
