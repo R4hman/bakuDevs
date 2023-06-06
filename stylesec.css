@@ -833,6 +833,7 @@ body {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
+  height: 35.7rem;
   box-shadow: 6px 10px 20px 0px #015e640f;
 }
 
@@ -975,29 +976,164 @@ body {
 }
 
 .modal-overlay {
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   display: none;
-
+  transition: opacity 0.2s ease;
+  align-items: center;
+  justify-content: center;
   z-index: 100;
 }
 
 .modal-active {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(205, 94, 94, 0.5);
   display: flex !important;
-  align-items: center;
-  justify-content: center;
+
   opacity: 1;
 }
 
 .modal {
-  background-color: red;
-  width: 200px;
-  height: 200px;
+  background-color: white;
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
 }
 
+.close-modal {
+  position: absolute;
+  right: 15px;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.close-icon {
+  width: 30px;
+  height: 25px;
+}
+
+.modal-content {
+  padding: 4.5rem;
+}
+
+.modal-content h3 {
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #939393;
+  margin-bottom: 5rem;
+}
+
+.subscription {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.subscription h3 {
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+}
+
+.subscribe-type {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.subscribe-label {
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.subscribe-type input {
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+}
+
+.line {
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+}
+
+.subscribe-btn {
+  margin-top: -7rem;
+}
+
+/* Table */
+
+.payment-table {
+  /* background-color: red; */
+  border-radius: 20px;
+  width: 70rem;
+  overflow: hidden;
+  box-shadow: 6px 10px 20px 0px #015e640f;
+}
+
+.payment-table thead {
+  background-color: #cae6e8;
+  border: 1px solid #ecf8f9;
+  padding: 22px 50px !important;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-collapse: separate;
+}
+
+.payment-table thead tr,
+.payment-table tbody tr {
+  font-family: "Mulish";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 22px 50px !important;
+  /* display: flex; */
+}
+
+.payment-table thead tr {
+  color: var(--main-color);
+}
+.payment-table tbody tr {
+  color: black;
+  font-weight: 500;
+}
+.payment-table tbody tr td {
+  padding: 22px 50px;
+}
+
+.payment-table tbody {
+  background-color: white;
+  cursor: pointer;
+}
+
+.payment-table thead tr th,
+.payment-table tbody tr th {
+  padding: 22px 50px;
+}
+
+.payment-table tbody tr td:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-icon {
+  width: 14.5px;
+}
 /* Footer */
 
 .footer {

@@ -11,7 +11,70 @@
     <div class="modal-relative">
       <div class="modal-overlay">
         <div class="modal">
-          <h1>modal</h1>
+          <span class="close-modal">
+            <ion-icon class="close-icon" name="close-outline"></ion-icon>
+          </span>
+          <div class="modal-content">
+            <div class="modal-inner rightMenu" data-id="subscribe-content">
+              <h3>
+                Sizin abunəliyiniz 15.03.2022 tarixində bitir. Abunəliyinizi
+                uzatmaq istədiyiniz tarixi seçin
+              </h3>
+              <div class="subscription">
+                <div class="subscribe-type">
+                  <input
+                    type="radio"
+                    name="fee"
+                    value="10"
+                    id="subscribe-ten"
+                  />
+                  <label class="subscribe-label" for="subscribe-ten">
+                    1 ay
+                  </label>
+                </div>
+                <h3>Məbləğ 10 AZN</h3>
+              </div>
+              <hr class="line" />
+              <div class="subscription">
+                <div class="subscribe-type">
+                  <input
+                    type="radio"
+                    name="fee"
+                    value="20"
+                    id="subscribe-twenty"
+                  />
+                  <label class="subscribe-label" for="subscribe-twenty">
+                    2 ay
+                  </label>
+                </div>
+                <h3>Məbləğ 20 AZN</h3>
+              </div>
+              <hr class="line" />
+              <div class="subscription">
+                <div class="subscribe-type">
+                  <input
+                    type="radio"
+                    name="fee"
+                    value="30"
+                    id="subscribe-thirty"
+                  />
+                  <label class="subscribe-label" for="subscribe-thirty">
+                    3 ay
+                  </label>
+                </div>
+                <h3>Məbləğ 30 AZN</h3>
+              </div>
+
+              <div class="query-btn subscribe-btn">
+                <a class="reset-link" href="javascript:void(0);"
+                  >Yenilə 1
+
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+            <div class="modal-inner rightMenu" data-id="payment-content"></div>
+          </div>
         </div>
       </div>
       <section class="section-home header-shadow">
@@ -158,16 +221,26 @@
                 </p>
 
                 <div class="query-btn">
-                  <a class="reset-link refresh" href=""
-                    >Yenilə
+                  <button type="button" class="reset-link refresh" href="">
+                    Yenilə 2
 
                     <ion-icon name="chevron-forward-outline"></ion-icon>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="qebzlerContent rightMenu"><h1>qebzler</h1></div>
+          <div class="qebzlerContent rightMenu">
+            <table class="payment-table">
+              <thead>
+                <tr>
+                  <th>Qəbz ID</th>
+                  <th>Abunə tarixi</th>
+                  <th>Məbləğ</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
           <div class="istekContent rightMenu"><h1>istek</h1></div>
         </div>
       </section>
@@ -230,6 +303,13 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      function runFunction(evt) {
+        evt.preventDefault();
+        evt.stopPropagation();
+        console.log("run function");
+      }
+    </script>
     <script src="contact.js"></script>
   </body>
 </html>

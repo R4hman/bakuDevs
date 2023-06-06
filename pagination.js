@@ -1,6 +1,5 @@
 const main = document.querySelector(".courses");
 const containerData = document.querySelector(".container-data");
-console.log(main);
 
 let list = [];
 const numOfElementsForPage = 4;
