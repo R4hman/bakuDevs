@@ -31,6 +31,10 @@ body {
   position: relative;
 }
 
+.menu-content {
+  display: none;
+}
+
 .container {
   max-width: 82rem !important;
   margin: 0 auto !important;
@@ -75,6 +79,10 @@ body {
   gap: 10px;
 }
 
+.kurs a {
+  color: #1b2221;
+}
+
 .courses span {
   font-size: 22px;
 }
@@ -84,8 +92,15 @@ body {
   justify-content: space-between;
 }
 
-.header-right ul li:not(:last-child) a span {
+.header-right ul li a {
   font-size: 16px;
+}
+
+.header-right ul li a span {
+  color: white;
+}
+.header-right ul li:not(:last-child) a span {
+  color: var(--main-color);
 }
 
 .header-right ul .btns {
@@ -318,7 +333,6 @@ body {
 }
 
 .divider {
-  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -534,6 +548,11 @@ body {
 
   justify-content: space-between;
   gap: 9rem;
+}
+
+.footer-top-left {
+  display: flex;
+  gap: 3rem;
 }
 .footer-top-first {
   font-family: "Mulish", sans-serif;
@@ -778,7 +797,7 @@ body {
 }
 
 .ios-title-bottom {
-  width: 74rem;
+  width: 25rem;
 }
 
 .course-info-ios {
@@ -1109,6 +1128,24 @@ body {
   text-align: left;
   margin-bottom: -38px;
   margin-top: 35px;
+}
+
+/* PAGINATION */
+
+.pagination-btns {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.2rem;
+  padding-bottom: 2rem;
+}
+.pagination-btn {
+  width: 50px;
+  font-size: 25px;
+  background-color: aqua;
+  border: 1px solid black !important;
+  outline: none;
+  cursor: pointer;
 }
 
 /*Media Queries */

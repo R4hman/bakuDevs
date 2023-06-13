@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries/index.css" />
     <title>Document</title>
   </head>
   <body>
@@ -17,7 +18,8 @@
             </div>
             <div class="kurs">
               <img src="img/menu.png" alt="" />
-              <span>Kurslar</span>
+              <a href="courses.html">Kurslar</a>
+              <!-- <span>Kurslar</span> -->
             </div>
           </div>
           <div class="header-right">
@@ -30,18 +32,84 @@
               </li>
 
               <li>
-                <a href="" class="btn">
+                <a href="signin.html" class="btn">
                   <img src="img/signin.png" alt="" />
                   <span>Daxil ol</span>
                 </a>
               </li>
               <li>
-                <a href="" class="btn">
+                <a href="signup.html" class="btn">
                   <img src="img/signup.png" alt="" />
                   <span>Qeydiyyatdan keç</span>
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="header-menu">
+            <!-- <ion-icon class="menu-close-icon" name="close-outline"></ion-icon> -->
+            <ion-icon class="menu-icon" name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu-content">
+            <span class="close-x">X</span>
+            <div class="menu-inner">
+              <nav class="nav-content-left">
+                <ul>
+                  <li class="active" data-id="frontend">
+                    <a href="">Frontend</a>
+                  </li>
+                  <li data-id="backend">
+                    <a href="">Backend</a>
+                  </li>
+                  <li data-id="ui/ux">
+                    <a href="">UI/UX</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav-content-right">
+                <ul class="active" data-id="frontend-content">
+                  <li>
+                    <a href="">HTML</a>
+                  </li>
+                  <li>
+                    <a href="">CSS</a>
+                  </li>
+                  <li>
+                    <a href="">Javascript</a>
+                  </li>
+                  <li>
+                    <a href="">Bootstrap</a>
+                  </li>
+                  <li>
+                    <a href="">Jquery</a>
+                  </li>
+                  <li>
+                    <a href="">React js</a>
+                  </li>
+                </ul>
+                <ul data-id="backend-content">
+                  <li>
+                    <a href="">Node.JS</a>
+                  </li>
+                  <li>
+                    <a href="">Java</a>
+                  </li>
+                  <li>
+                    <a href="">PHP</a>
+                  </li>
+                  <li>
+                    <a href="">C++</a>
+                  </li>
+                </ul>
+                <ul data-id="ui/ux-content">
+                  <li>
+                    <a href="">Adobe premiere</a>
+                  </li>
+                  <li>
+                    <a href="">Figma</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
       </div>
@@ -51,7 +119,7 @@
       </div>
     </section>
     <section class="section-single-ios">
-      <div class="icon-bar">
+      <!-- <div class="icon-bar">
         <a href="#" class="share"
           ><ion-icon name="share-social-outline"></ion-icon
         ></a>
@@ -67,7 +135,7 @@
         <a href="#" class="twitter"
           ><ion-icon name="logo-twitter"></ion-icon
         ></a>
-      </div>
+      </div> -->
       <div class="container">
         <div class="ios-title">
           <div class="ios-title-top">

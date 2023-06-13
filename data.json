@@ -3,180 +3,84 @@
     "id": 1,
     "name": "Javascript",
     "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "title": "javascript is a beautiful language",
+    "type": "frontend"
   },
   {
     "id": 2,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/html.png",
+    "title": "javascript is a beautiful language",
+    "type": "frontend"
   },
   {
     "id": 3,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/css.png",
+    "title": "javascript is a beautiful language",
+    "type": "frontend"
   },
   {
     "id": 4,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/backend.png",
+    "title": "javascript is a beautiful language",
+    "type": "backend"
   },
   {
     "id": 5,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/php.png",
+    "title": "javascript is a beautiful language",
+    "type": "backend"
   },
   {
     "id": 6,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/csharp.png",
+    "title": "javascript is a beautiful language",
+    "type": "backend"
   },
   {
     "id": 7,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/IOS.png",
+    "title": "javascript is a beautiful language",
+    "type": "backend"
   },
   {
     "id": 8,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/UI.png",
+    "title": "javascript is a beautiful language",
+    "type": "ui/ux"
   },
   {
     "id": 9,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/UX.png",
+    "title": "javascript is a beautiful language",
+    "type": "ui/ux"
   },
   {
     "id": 10,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/js.png",
+    "title": "javascript is a beautiful language",
+    "type": "frontend"
   },
   {
     "id": 11,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/android.png",
+    "title": "javascript is a beautiful language",
+    "type": "backend"
   },
   {
     "id": 12,
     "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 13,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 14,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 15,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 16,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 17,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 18,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 19,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 20,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 21,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 22,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 23,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 24,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 25,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 26,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 27,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 28,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 29,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
-  },
-  {
-    "id": 30,
-    "name": "Javascript",
-    "img": "img/javascript2.png",
-    "title": "javascript is a beautiful language"
+    "img": "img/adobe.png",
+    "title": "javascript is a beautiful language",
+    "type": "ui/ux"
   }
 ]

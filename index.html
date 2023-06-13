@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries/index.css" />
+
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
     <title>Document</title>
   </head>
   <body>
@@ -31,13 +34,13 @@
               </li>
 
               <li>
-                <a href="" class="btn">
+                <a href="signin.html" class="btn">
                   <img src="img/signin.png" alt="" />
                   <span>Daxil ol</span>
                 </a>
               </li>
               <li>
-                <a href="" class="btn">
+                <a href="signup.html" class="btn">
                   <img src="img/signup.png" alt="" />
                   <span>Qeydiyyatdan keç</span>
                 </a>
@@ -45,9 +48,73 @@
             </ul>
           </div>
           <div class="header-menu">
-            <ion-icon name="grid-outline"></ion-icon>
+            <!-- <ion-icon class="menu-close-icon" name="close-outline"></ion-icon> -->
+            <ion-icon class="menu-icon" name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu-content">
+            <span class="close-x">X</span>
+            <div class="menu-inner">
+              <nav class="nav-content-left">
+                <ul>
+                  <li class="active" data-id="frontend">
+                    <a href="">Frontend</a>
+                  </li>
+                  <li data-id="backend">
+                    <a href="">Backend</a>
+                  </li>
+                  <li data-id="ui/ux">
+                    <a href="">UI/UX</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav-content-right">
+                <ul class="active" data-id="frontend-content">
+                  <li>
+                    <a href="">HTML</a>
+                  </li>
+                  <li>
+                    <a href="">CSS</a>
+                  </li>
+                  <li>
+                    <a href="">Javascript</a>
+                  </li>
+                  <li>
+                    <a href="">Bootstrap</a>
+                  </li>
+                  <li>
+                    <a href="">Jquery</a>
+                  </li>
+                  <li>
+                    <a href="">React js</a>
+                  </li>
+                </ul>
+                <ul data-id="backend-content">
+                  <li>
+                    <a href="">Node.JS</a>
+                  </li>
+                  <li>
+                    <a href="">Java</a>
+                  </li>
+                  <li>
+                    <a href="">PHP</a>
+                  </li>
+                  <li>
+                    <a href="">C++</a>
+                  </li>
+                </ul>
+                <ul data-id="ui/ux-content">
+                  <li>
+                    <a href="">Adobe premiere</a>
+                  </li>
+                  <li>
+                    <a href="">Figma</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
+
         <div class="home">
           <div class="home-left">
             <h1 class="main-heading">
@@ -80,257 +147,270 @@
       </div>
     </section>
     <section class="section-courses">
-      <header class="header-courses">
-        <h1>Populyar Kurslar</h1>
-        <div class="category">
-          <ul>
-            <li>
-              <a class="active" href="">Hamısı</a>
-            </li>
-            <li>
-              <a href="">Frontend</a>
-            </li>
-            <li>
-              <a href="">Backend</a>
-            </li>
-            <li>
-              <a href="">UI/UX</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <div class="courses">
-        <div class="course">
-          <div class="course-img-container">
-            <img class="course-img" src="img/js.png" alt="javascript-img" />
+      <div class="container">
+        <header class="header-courses">
+          <h1>Populyar Kurslar</h1>
+          <div class="category">
+            <ul>
+              <li>
+                <a class="active" data-id="cat-all" href="">Hamısı</a>
+              </li>
+              <li>
+                <a href="" data-id="cat-frontend">Frontend</a>
+              </li>
+              <li>
+                <a href="" data-id="cat-backend">Backend</a>
+              </li>
+              <li>
+                <a href="" data-id="cat-ui/ux">UI/UX</a>
+              </li>
+            </ul>
           </div>
-          <div class="course-info">
-            <h4 class="course-title">Frontend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">18 dərs</span>
+        </header>
+        <div class="courses">
+          <!-- <div class="course">
+            <div class="course-img-container">
+              <img class="course-img" src="img/js.png" alt="javascript-img" />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Frontend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">18 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img
-              class="course-img"
-              src="img/backend.png"
-              alt="javascript-img"
-            />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">Backend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">20 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img
+                class="course-img"
+                src="img/backend.png"
+                alt="javascript-img"
+              />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Backend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">20 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img class="course-img" src="img/UX.png" alt="javascript-img" />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">Frontend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">23 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img class="course-img" src="img/UX.png" alt="javascript-img" />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Frontend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">23 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img
-              class="course-img"
-              src="img/android.png"
-              alt="javascript-img"
-            />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">Backend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">18 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img
+                class="course-img"
+                src="img/android.png"
+                alt="javascript-img"
+              />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Backend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">18 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img class="course-img" src="img/html.png" alt="javascript-img" />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">Frontend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">10 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img class="course-img" src="img/html.png" alt="javascript-img" />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Frontend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">10 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img class="course-img" src="img/csharp.png" alt="javascript-img" />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">Backend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">21 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img
+                class="course-img"
+                src="img/csharp.png"
+                alt="javascript-img"
+              />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Backend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">21 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img class="course-img" src="img/php.png" alt="javascript-img" />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">Backend</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">20 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img class="course-img" src="img/php.png" alt="javascript-img" />
+            </div>
+            <div class="course-info">
+              <h4 class="course-title">Backend</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">20 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
             </div>
           </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
-        </div>
-        <div class="course">
-          <div class="course-img-container">
-            <img class="course-img" src="img/adobe.png" alt="javascript-img" />
-          </div>
-          <div class="course-info">
-            <h4 class="course-title">UI/UX</h4>
-            <div class="course-hours">
-              <ion-icon
-                class="play-icon"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-              <span class="course-hours">18 dərs</span>
+          <div class="course">
+            <div class="course-img-container">
+              <img
+                class="course-img"
+                src="img/adobe.png"
+                alt="javascript-img"
+              />
             </div>
-          </div>
-          <div class="divider">
-            <hr />
-          </div>
-          <div class="main-info">
-            <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-            <a href="">
-              <ion-icon
-                class="play-icon-secondary"
-                name="play-skip-back-circle-outline"
-              ></ion-icon>
-            </a>
-          </div>
+            <div class="course-info">
+              <h4 class="course-title">UI/UX</h4>
+              <div class="course-hours">
+                <ion-icon
+                  class="play-icon"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+                <span class="course-hours">18 dərs</span>
+              </div>
+            </div>
+            <div class="divider">
+              <hr />
+            </div>
+            <div class="main-info">
+              <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+              <a href="">
+                <ion-icon
+                  class="play-icon-secondary"
+                  name="play-skip-back-circle-outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div> -->
         </div>
-      </div>
 
-      <div class="btn-flex">
-        <button class="btn-center">
-          Bütün Kurslar
-          <ion-icon class="btn-icon" name="chevron-forward-outline"></ion-icon>
-        </button>
+        <div class="btn-flex">
+          <button class="btn-center">
+            Bütün Kurslar
+            <ion-icon
+              class="btn-icon"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -408,21 +488,23 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
-          <div class="footer-top-first">
-            <img src="img/logoSecond.png" alt="" />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="footer-top-left">
+            <div class="footer-top-first">
+              <img src="img/logoSecond.png" alt="" />
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <ul class="footer-top-secondary">
+              <li><a href="">Frontend</a></li>
+              <li><a href="">Backend</a></li>
+              <li><a href="">UI/UX</a></li>
+            </ul>
+            <ul class="footer-top-tertiary">
+              <li><a href="index.html">Əsas səhifə</a></li>
+              <li><a href="courses.html">Kurslar</a></li>
+              <li><a href="aboutUs.html">Haqqımızda</a></li>
+              <li><a href="">Əlaqə </a></li>
+            </ul>
           </div>
-          <ul class="footer-top-secondary">
-            <li><a href="">Frontend</a></li>
-            <li><a href="">Backend</a></li>
-            <li><a href="">UI/UX</a></li>
-          </ul>
-          <ul class="footer-top-tertiary">
-            <li><a href="index.html">Əsas səhifə</a></li>
-            <li><a href="courses.html">Kurslar</a></li>
-            <li><a href="aboutUs.html">Haqqımızda</a></li>
-            <li><a href="">Əlaqə </a></li>
-          </ul>
 
           <div class="footer-top-fourth">
             <p>Yeniliklərdən xəbərdar olmaq üçün Qeydiyyatdan keçin.</p>
@@ -463,5 +545,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="script.js"></script>
+    <!-- <script src="contact.js"></script> -->
   </body>
 </html>

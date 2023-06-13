@@ -1,0 +1,598 @@
+/* 1128px */
+
+@media screen and (max-width: 70.5em) {
+  /* ABOUT US PAGE */
+  .featured {
+    width: 240px;
+    height: 290px;
+  }
+
+  .header-left {
+    gap: 7rem;
+  }
+
+  .aboutUs-right h1 {
+    font-size: 31px;
+  }
+
+  .featured-right-img img {
+    width: 411px;
+    height: 411px;
+  }
+
+  .footer-top {
+    gap: 6rem;
+  }
+
+  .aboutUs .container {
+    gap: 6rem;
+  }
+
+  /* CONTACT PAGE */
+
+  .section-contact {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .contact-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .social-icons {
+    gap: 0.8rem;
+  }
+  .social-icon {
+    height: 10px;
+    width: 10px;
+  }
+
+  .contact h3 {
+    font-size: 14px;
+  }
+
+  .query-left input,
+  .query-right textarea {
+    width: 35rem;
+  }
+
+  /* ACCOUNT PAGE*/
+
+  .section-account .container {
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+
+  .profile-flex-content {
+    gap: 7rem;
+  }
+}
+
+/* 1020px */
+
+@media screen and (max-width: 63.75em) {
+  .section-featured {
+    padding: 6rem 0;
+  }
+  .featured-right-img::before {
+    left: -65px;
+    transform: rotate(-63deg);
+    top: 8rem;
+  }
+
+  .aboutUs-right p {
+    font-size: 16px;
+  }
+
+  .featured-right-img::after {
+    right: 264px;
+  }
+
+  .featured {
+    width: 215px;
+    height: 311px;
+  }
+
+  .featured-right-img img {
+    width: 350px;
+    height: 350px;
+  }
+
+  /* CONTACT PAGE */
+
+  .query-left input,
+  .query-right textarea {
+    width: 32rem;
+  }
+
+  /* ACCOUNT PAGE */
+
+  .profile-flex-content {
+    gap: 3rem;
+  }
+
+  .abunelikContent {
+    margin-right: 10rem;
+  }
+
+  .qebzlerContent {
+    margin-left: -1rem;
+  }
+
+  .info {
+    width: 53rem;
+  }
+
+  .personal h1 {
+    font-size: 18px;
+  }
+
+  /* SIGN IN PAGE */
+
+  .form-signin::before {
+    content: "";
+  }
+}
+
+/* 952px */
+
+@media screen and (max-width: 59.5em) {
+  .featured {
+    width: 200px;
+    height: 325px;
+  }
+
+  .featured-right-img img {
+    width: 310px;
+    height: 310px;
+  }
+
+  .aboutUs-left > img,
+  .aboutUs-left::before {
+    height: 300px;
+    width: 320px;
+  }
+
+  .featured-right-img::after {
+    right: 206px;
+  }
+
+  .featured-right-img::before {
+    transform: rotate(-83deg);
+  }
+
+  .aboutUs-right p {
+    line-height: 24px;
+  }
+
+  .featured-icon {
+    padding: 13px;
+  }
+
+  .footer-top-first p,
+  .footer-top-fourth p {
+    font-size: 16px;
+  }
+
+  .footer-top {
+    gap: 4rem;
+  }
+
+  .featured-left {
+    gap: 1rem;
+  }
+
+  /* MENU CONTENT */
+  .header-menu {
+    display: block;
+  }
+  .header-right,
+  .kurs {
+    display: none;
+  }
+
+  .menu-icon,
+  .menu-close-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--main-color);
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-x {
+    position: relative;
+    top: 50px;
+    left: 20rem;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .menu-inner {
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    display: flex;
+
+    gap: 1rem;
+    width: 70%;
+  }
+
+  .nav-content-left ul {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 1rem;
+    /* margin-right: 5rem; */
+  }
+
+  .nav-content-left ul li a {
+    font-family: "Mulish";
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    stroke-width: 2px;
+    color: white;
+
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .nav-content-right ul li a {
+    font-family: "Mulish";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #939393;
+  }
+
+  .menu-content {
+    background: url(../img/menuBg.jpg);
+  }
+
+  .menu-content {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(152, 152, 199); */
+    z-index: 999;
+  }
+
+  .nav-content-left ul li.active a {
+    color: black !important;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .nav-content-right ul.active {
+    display: block;
+  }
+
+  .nav-content-right ul {
+    display: none;
+  }
+
+  .aboutUs-right p {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+
+  .aboutUs-right h1 {
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  /* CONTACT PAGE */
+  .footer-top {
+    gap: 3rem;
+  }
+
+  .query-left::before {
+    top: -12.7rem;
+    left: -5.4rem;
+  }
+
+  .section-contact .container {
+    flex-wrap: wrap;
+  }
+
+  .query-left input,
+  .query-right textarea {
+    max-width: 32rem;
+    width: 100%;
+  }
+
+  .section-query h3 {
+    margin-bottom: 15rem;
+  }
+
+  /* ACCOUNT PAGE */
+
+  .profile-flex input {
+    width: 260px;
+  }
+
+  .personal ul li a {
+    font-size: 18px;
+  }
+
+  .section-account .container,
+  .profile-flex-content {
+    gap: 1rem;
+  }
+
+  .profile-flex input {
+    width: 230px;
+  }
+
+  .payment-table {
+    max-width: 30rem !important;
+    white-space: nowrap;
+  }
+
+  .payment-table thead tr,
+  .payment-table tbody tr {
+    font-size: 14px;
+  }
+
+  .abunelikContent {
+    margin-right: 10rem;
+  }
+
+  .qebzlerContent {
+    margin-left: -1rem;
+  }
+}
+
+/* 796 */
+
+@media screen and (max-width: 49.5em) {
+  .featured-left {
+    flex-direction: column;
+  }
+  .featured-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .featured-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .featured-flex {
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+  .aboutUs .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutUs-right p {
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+
+  .aboutUs-right {
+    margin-top: 2rem;
+  }
+  .aboutUs {
+    padding-bottom: 8rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-top-left {
+    gap: 8.5rem !important;
+  }
+
+  .footer-top-fourth p {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .footer {
+    background-color: var(--main-color);
+  }
+
+  /* CONTACT PAGE */
+
+  .query-left input,
+  .query-right textarea {
+    max-width: 23rem;
+    width: 100%;
+  }
+
+  .query {
+    gap: 1rem;
+  }
+
+  .footer-top-secondary,
+  .footer-top-tertiary {
+    text-align: center;
+    list-style: none;
+  }
+  .footer-top-secondary li,
+  .footer-top-tertiary li {
+    list-style: none;
+  }
+
+  /* ACCOUNT PAGE */
+
+  .section-account .container,
+  .profile-flex-content {
+    flex-wrap: wrap;
+  }
+
+  .profile-flex-content {
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .section-account .container {
+    gap: 8rem;
+  }
+
+  .profile-flex input {
+    width: 270px;
+  }
+
+  .profile-flex {
+    font-size: 20px;
+  }
+
+  .payment-table {
+    width: 30rem !important;
+  }
+
+  .abunelikContent {
+    margin-right: 0;
+  }
+
+  .qebzlerContent {
+    margin-left: 0;
+  }
+}
+
+/* 576 */
+
+@media screen and (max-width: 36em) {
+  .featured-flex {
+    gap: 6rem;
+  }
+  .featured-title {
+    line-height: 4.6rem;
+    font-size: 3rem;
+  }
+
+  .featured-subtitle {
+    text-align: center;
+  }
+  .featured-flex {
+    flex-direction: column;
+  }
+
+  .featured-right-img::before {
+    transform: rotate(-5deg);
+  }
+
+  .footer-top-left li {
+    list-style: none;
+  }
+
+  .footer-top-first p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3rem;
+  }
+
+  .footer-top-left {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem !important;
+  }
+
+  .footer-top-secondary,
+  .footer-top-tertiary {
+    text-align: center;
+    list-style: none;
+  }
+  .footer-top-secondary li,
+  .footer-top-tertiary li {
+    list-style: none;
+  }
+
+  .featured {
+    width: 270px;
+    height: 270px;
+  }
+
+  /* CONTACT PAGE */
+  .query-left input,
+  .query-right textarea {
+    width: 40rem !important;
+  }
+  .query {
+    flex-direction: column;
+    gap: 9rem;
+  }
+
+  .query-left::before {
+    top: -16.7rem;
+  }
+
+  /* ACCOUNT PAGE */
+  .profile-flex-content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .payment-table thead tr,
+  .payment-table tbody tr {
+    font-size: 14px;
+  }
+
+  .payment-table {
+    border-collapse: collapse;
+  }
+
+  .payment-table thead tr th,
+  .payment-table tbody tr td {
+    text-align: center;
+    width: 20px !important;
+    min-width: 20px !important;
+  }
+
+  .info {
+    width: 37rem;
+  }
+
+  /* MODAL */
+  .modal {
+    width: 400px;
+  }
+
+  /* SIGN IN PAGE */
+
+  .form-signin {
+    width: 38rem;
+  }
+
+  .fb-link {
+    width: 34rem;
+  }
+}
+
+.footer-top-left {
+  display: flex;
+  gap: 4rem;
+}
+
+/* .personal {
+  flex: 1;
+}
+
+.profileContent,
+.qebzlerContent,
+.abunelikContent,
+.istekContent {
+  flex: 3;
+} */

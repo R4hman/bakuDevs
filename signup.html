@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesec.css" />
+    <link rel="stylesheet" href="queries/secondQuery.css" />
     <title>Document</title>
   </head>
   <body>
@@ -44,7 +45,70 @@
             </ul>
           </div>
           <div class="header-menu">
-            <ion-icon name="grid-outline"></ion-icon>
+            <!-- <ion-icon class="menu-close-icon" name="close-outline"></ion-icon> -->
+            <ion-icon class="menu-icon" name="grid-outline"></ion-icon>
+          </div>
+          <div class="menu-content">
+            <span class="close-x">X</span>
+            <div class="menu-inner">
+              <nav class="nav-content-left">
+                <ul>
+                  <li class="active" data-id="frontend">
+                    <a href="">Frontend</a>
+                  </li>
+                  <li data-id="backend">
+                    <a href="">Backend</a>
+                  </li>
+                  <li data-id="ui/ux">
+                    <a href="">UI/UX</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav-content-right">
+                <ul class="active" data-id="frontend-content">
+                  <li>
+                    <a href="">HTML</a>
+                  </li>
+                  <li>
+                    <a href="">CSS</a>
+                  </li>
+                  <li>
+                    <a href="">Javascript</a>
+                  </li>
+                  <li>
+                    <a href="">Bootstrap</a>
+                  </li>
+                  <li>
+                    <a href="">Jquery</a>
+                  </li>
+                  <li>
+                    <a href="">React js</a>
+                  </li>
+                </ul>
+                <ul data-id="backend-content">
+                  <li>
+                    <a href="">Node.JS</a>
+                  </li>
+                  <li>
+                    <a href="">Java</a>
+                  </li>
+                  <li>
+                    <a href="">PHP</a>
+                  </li>
+                  <li>
+                    <a href="">C++</a>
+                  </li>
+                </ul>
+                <ul data-id="ui/ux-content">
+                  <li>
+                    <a href="">Adobe premiere</a>
+                  </li>
+                  <li>
+                    <a href="">Figma</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
       </div>
@@ -180,5 +244,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

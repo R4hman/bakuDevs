@@ -25,6 +25,7 @@ body {
   max-width: 130rem;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
   /* background-color: rgb(180, 163, 163); */
 }
 
@@ -53,6 +54,10 @@ body {
 }
 
 .header-menu {
+  display: none;
+}
+
+.menu-content {
   display: none;
 }
 
@@ -399,6 +404,8 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .section-contact .container::before {
   content: url(img/dotsandSquares.png);
@@ -411,14 +418,15 @@ body {
 
 .contact {
   background-color: #f4d2b8;
-  padding: 3.6rem 6.4rem;
+  padding: 3.6rem 2.4rem;
   border-radius: 30px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
   height: 254px;
-  width: 271px;
+  max-width: 271px;
+  width: 100%;
 }
 
 .contact-icon {
@@ -696,7 +704,7 @@ body {
 .logo-facebook,
 .logo-gmail {
   color: white;
-  padding: 15px;
+  padding: 21px;
   height: 17.234926223754883px;
   width: 27.111682891845703px;
   left: 1.96875px;
@@ -944,6 +952,7 @@ body {
   color: #ba6363;
   padding: 2rem 2.4rem;
   border: 1px solid #c89f9f;
+  width: 67rem;
 }
 
 .info h1 {
@@ -1078,18 +1087,26 @@ body {
 .payment-table {
   /* background-color: red; */
   border-radius: 20px;
-  width: 70rem;
+  max-width: 600px !important;
+  width: 100%;
   overflow: hidden;
   box-shadow: 6px 10px 20px 0px #015e640f;
+  /* word-break: break-all; */
+  /* white-space: nowrap; */
+  /* table-layout: fixed; */
+  text-align: center;
+  width: 120px;
+  min-width: 120px;
 }
 
 .payment-table thead {
   background-color: #cae6e8;
   border: 1px solid #ecf8f9;
-  padding: 22px 50px !important;
+  padding: 22px 40px !important;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-collapse: separate;
+  max-width: 43rem !important;
 }
 
 .payment-table thead tr,
@@ -1102,6 +1119,7 @@ body {
   text-align: left;
   padding: 22px 50px !important;
   /* display: flex; */
+  overflow-x: auto;
 }
 
 .payment-table thead tr {
@@ -1122,7 +1140,7 @@ body {
 
 .payment-table thead tr th,
 .payment-table tbody tr th {
-  padding: 22px 50px;
+  padding: 22px 40px;
 }
 
 .payment-table tbody tr td:first-of-type {

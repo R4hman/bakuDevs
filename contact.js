@@ -13,9 +13,6 @@ const subscribeTypes = document.querySelectorAll(".subscribe-type");
 const refreshBtn = document.querySelector(".subscribe-btn");
 const paymentTable = document.querySelector(".payment-table");
 const tableLists = document.querySelectorAll(".table-list");
-console.log(tableLists.length);
-
-console.log(paymentTable);
 
 let tableArrays = [];
 
@@ -46,7 +43,7 @@ changePageButton.forEach((activeButton) => {
     }
   });
 });
-
+console.log(refreshSubscribe);
 refreshSubscribe.onclick = function (e) {
   e.preventDefault();
   e.stopPropagation();
@@ -244,3 +241,51 @@ window.onclick = (e) => {
     });
   }
 };
+
+// Wishlist
+
+const wishlist = localStorage.getItem("wishlist");
+console.log(wishlist);
+
+async function createWishlist() {
+  const l = await fetch("./data.json");
+  const res = await l.json();
+  const d = res.filter((rs) => wishlist.includes(rs.id));
+  console.log(d);
+
+  const data = d.map((r, i) => {
+    return `
+      <div class="course" data-id=${r.id}>
+      <div class="course-img-container">
+        <img class="course-img" src=${r.img} alt="javascript-img" />
+      </div>
+      <div class="course-info">
+        <h4 class="course-title">${r.type}</h4>
+        <div class="course-hours">
+          <ion-icon
+            class="play-icon"
+            name="play-skip-back-circle-outline"
+          ></ion-icon>
+          <span class="course-hours">18 dərs</span>
+        </div>
+      </div>
+      <div class="divider">
+        <hr />
+      </div>
+      <div class="main-info">
+        <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+        <a href="">
+          <ion-icon
+            class="play-icon-secondary"
+            name="play-skip-back-circle-outline"
+          ></ion-icon>
+        </a>
+      </div>
+    </div>
+          `;
+  });
+
+  istekContent.innerHTML = "";
+  istekContent.insertAdjacentHTML("beforeend", data.join(" "));
+}
+createWishlist();

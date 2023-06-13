@@ -1,4 +1,5 @@
 const main = document.querySelector(".courses");
+// const containerData = document.querySelector(".section-courses");
 const containerData = document.querySelector(".container-data");
 
 let list = [];
