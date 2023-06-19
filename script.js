@@ -1,20 +1,9 @@
-"use strict";
 const courseLesson = document.querySelectorAll(".course-lessons");
 const courseLessonInput = document.querySelectorAll(".course-lessons input");
 const categories = document.querySelectorAll(".category ul li a");
 const courses = document.querySelector(".courses");
-
-// import * as wish from "./wishlist";
-// console.log(wish.createWishlist);
-
-let wishlist;
-wishlist = localStorage.getItem("wishlist");
-if (!wishlist) {
-  wishlist = [];
-  localStorage.setItem("wishlist", wishlist);
-}
-
-console.log(wishlist);
+const courseList = document.querySelector(".course");
+const sectionCourses = document.querySelector(".section-courses");
 
 categories.forEach((category) => {
   category.addEventListener("click", async (e) => {
@@ -63,6 +52,16 @@ async function getDataFromDB(cat) {
         ></ion-icon>
       </a>
     </div>
+    <div class="hoverable">
+      <a href="singleIOS.html">
+      <ion-icon name="radio-button-on-outline"></ion-icon>
+       
+      </a>
+      <button>
+      <ion-icon name="cart-outline"></ion-icon>
+       
+      </button>
+    </div>
   </div>
     `;
   });
@@ -73,17 +72,47 @@ async function getDataFromDB(cat) {
   courses.innerHTML = "";
   courses.insertAdjacentHTML("beforeend", data.join(" "));
 
-  document.querySelectorAll(".course").forEach((crs) => {
+  document.querySelectorAll(".course .hoverable button").forEach((crs) => {
     crs.onclick = (e) => {
       e.preventDefault();
 
-      if (!wishlist.includes(crs.dataset.id)) {
-        wishlist.push(crs.dataset.id);
+      const id = crs.closest(".course").dataset.id;
+
+      const wishlist = JSON.parse(localStorage.getItem("wishlist"));
+
+      if (wishlist && !wishlist.includes(id)) {
+        wishlist.push(id);
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
       }
 
-      localStorage.setItem("wishlist", wishlist);
+      if (wishlist === undefined || wishlist === null) {
+        const wishlist = [];
+        wishlist.push(id);
+
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      }
+      createInfo();
     };
   });
+}
+
+function createInfo() {
+  const addInfo = document.createElement("div");
+  addInfo.classList.add("add-info");
+  const infoMsg = document.createElement("p");
+  infoMsg.innerHTML = "Səbətə əlavə olundu";
+  addInfo.appendChild(infoMsg);
+
+  let coords = sectionCourses.getBoundingClientRect();
+
+  addInfo.style.left = 643 + "px";
+  addInfo.style.top = 130 + "px";
+  // addInfo.style.left = 383 + "px";
+  // addInfo.style.top = 44 + "px";
+  // addInfo.style.left = coords.left + "px";
+  // addInfo.style.top = coords.top + "px";
+  document.body.append(addInfo);
+  setTimeout(() => addInfo.remove(), 1000);
 }
 
 function grabDataId(el) {
@@ -110,11 +139,11 @@ const menu = document.querySelector(".menu-icon");
 const menuClose = document.querySelector(".menu-close-icon");
 const menuContent = document.querySelector(".menu-content");
 const close = document.querySelector(".close-x");
+const menuInner = document.querySelector(".menu-inner");
 
 menu.addEventListener("click", () => {
   menuContent.style.display = "block";
   menu.style.display = "none";
-
   document.body.style.overflow = "hidden";
   console.log(document.body);
 });
@@ -122,7 +151,6 @@ menu.addEventListener("click", () => {
 close.addEventListener("click", () => {
   menuContent.style.display = "none";
   menu.style.display = "block";
-
   document.body.style.height = "auto";
   document.body.style.overflow = "auto";
 });
@@ -170,44 +198,37 @@ menuItems.forEach((item) => {
   });
 });
 
-// create wishlist
+// open wishlist
 
-// function createWishlist(list) {
-//   const content = list.map((lst) => {
-//     return `
-//      <div class="course" data-id=${lst.id}>
-//     <div class="course-img-container">
-//       <img class="course-img" src=${lst.img} alt="javascript-img" />
-//     </div>
-//     <div class="course-info">
-//       <h4 class="course-title">${lst.type}</h4>
-//       <div class="course-hours">
-//         <ion-icon
-//           class="play-icon"
-//           name="play-skip-back-circle-outline"
-//         ></ion-icon>
-//         <span class="course-hours">18 dərs</span>
-//       </div>
-//     </div>
-//     <div class="divider">
-//       <hr />
-//     </div>
-//     <div class="main-info">
-//       <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-//       <a href="">
-//         <ion-icon
-//           class="play-icon-secondary"
-//           name="play-skip-back-circle-outline"
-//         ></ion-icon>
-//       </a>
-//     </div>
-//   </div>
-//     `;
-//   });
-//   console.log(wishContent);
-//   wishContent.innerHTML = "";
-//   wishContent.insertAdjacentHTML("beforeend", content.join(" "));
-// }
+const openWishlist = document.querySelector(".openWishlist");
+openWishlist.onclick = function (e) {
+  e.preventDefault();
+  window.location.replace("http://localhost:5500/account.html");
+  console.log(document.body);
+};
+
+// STICKY NAVIGATION
+
+const stickySectionEl = document.querySelector(".section-home");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+obs.observe(stickySectionEl);
 
 async function Init() {
   await getDataFromDB("cat-all");

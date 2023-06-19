@@ -7,6 +7,13 @@
     height: 290px;
   }
 
+  .personal {
+    flex: 2;
+  }
+  .rightMenu {
+    flex: 4;
+  }
+
   .header-left {
     gap: 7rem;
   }
@@ -61,7 +68,7 @@
 
   .section-account .container {
     justify-content: space-evenly;
-    gap: 3rem;
+    gap: 4.5rem;
   }
 
   .profile-flex-content {
@@ -110,10 +117,13 @@
 
   .profile-flex-content {
     gap: 3rem;
+    justify-content: flex-end;
   }
 
   .abunelikContent {
     margin-right: 10rem;
+    margin: 0 auto;
+    /* justify-content: flex-end; */
   }
 
   .qebzlerContent {
@@ -121,7 +131,7 @@
   }
 
   .info {
-    width: 53rem;
+    width: 40rem;
   }
 
   .personal h1 {
@@ -138,6 +148,16 @@
 /* 952px */
 
 @media screen and (max-width: 59.5em) {
+  .rightMenu {
+    flex: 4;
+  }
+  .personal h1 {
+    font-size: 16px;
+  }
+
+  .profile-flex-content {
+    gap: 0rem;
+  }
   .featured {
     width: 200px;
     height: 325px;
@@ -354,13 +374,21 @@
   }
 
   .qebzlerContent {
-    margin-left: -1rem;
+    margin-left: 3rem;
   }
 }
 
 /* 796 */
 
 @media screen and (max-width: 49.5em) {
+  .personal,
+  .rightMenu {
+    flex: 1;
+  }
+
+  .personal {
+    margin: 0 auto;
+  }
   .featured-left {
     flex-direction: column;
   }
@@ -408,9 +436,9 @@
     text-align: center;
   }
 
-  .footer {
+  /* .footer {
     background-color: var(--main-color);
-  }
+  } */
 
   /* CONTACT PAGE */
 
@@ -449,6 +477,14 @@
 
   .section-account .container {
     gap: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .abunelikContent {
+    margin-right: 100px;
   }
 
   .profile-flex input {
@@ -464,17 +500,25 @@
   }
 
   .abunelikContent {
-    margin-right: 0;
+    margin-right: 10rem;
   }
 
   .qebzlerContent {
     margin-left: 0;
+  }
+
+  .footer {
+    background-position: center !important;
+    background-size: 100% 100% !important;
   }
 }
 
 /* 576 */
 
 @media screen and (max-width: 36em) {
+  .abunelikContent {
+    margin-right: 4rem;
+  }
   .featured-flex {
     gap: 6rem;
   }

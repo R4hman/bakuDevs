@@ -26,6 +26,7 @@ changePageButton.forEach((activeButton) => {
     switch (activeButton.dataset.id) {
       case "profile":
         profileContent.style.display = "block";
+        // document.location.href = "http://localhost:5500/account.html/profile";
         break;
 
       case "subscribe":
@@ -43,7 +44,7 @@ changePageButton.forEach((activeButton) => {
     }
   });
 });
-console.log(refreshSubscribe);
+
 refreshSubscribe.onclick = function (e) {
   e.preventDefault();
   e.stopPropagation();
@@ -56,7 +57,6 @@ refreshSubscribe.onclick = function (e) {
         item.classList.add("active");
       }
     });
-    // return false;
   }
 
   modalInner.forEach((modal) => {
@@ -205,7 +205,7 @@ function createTable(obj) {
                 <td>${obj.val}</td>
               </tr>
     `;
-  paymentTable.insertAdjacentHTML("beforeend", tableContent);
+  paymentTable.insertAdjacentHTML("afterbegin", tableContent);
 }
 
 window.onclick = (e) => {
@@ -245,47 +245,101 @@ window.onclick = (e) => {
 // Wishlist
 
 const wishlist = localStorage.getItem("wishlist");
-console.log(wishlist);
 
 async function createWishlist() {
   const l = await fetch("./data.json");
   const res = await l.json();
-  const d = res.filter((rs) => wishlist.includes(rs.id));
-  console.log(d);
+  if (wishlist.length > 0) {
+    const d = res.filter((rs) => wishlist.includes(rs.id));
 
-  const data = d.map((r, i) => {
-    return `
+    const data = d.map((r, i) => {
+      return `
       <div class="course" data-id=${r.id}>
+      
       <div class="course-img-container">
         <img class="course-img" src=${r.img} alt="javascript-img" />
       </div>
       <div class="course-info">
-        <h4 class="course-title">${r.type}</h4>
-        <div class="course-hours">
-          <ion-icon
-            class="play-icon"
-            name="play-skip-back-circle-outline"
-          ></ion-icon>
-          <span class="course-hours">18 dərs</span>
-        </div>
+      <h4 class="course-title">${r.type}</h4>
+      <div class="course-hours">
+      <ion-icon
+      class="play-icon"
+      name="play-skip-back-circle-outline"
+      ></ion-icon>
+      <span class="course-hours">18 dərs</span>
+      </div>
       </div>
       <div class="divider">
-        <hr />
+      <hr />
       </div>
       <div class="main-info">
-        <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
-        <a href="">
-          <ion-icon
-            class="play-icon-secondary"
-            name="play-skip-back-circle-outline"
-          ></ion-icon>
-        </a>
+      <h1 class="subtitle">Lorem ipsum dolor sit amet.</h1>
+      <a href="">
+      <ion-icon
+      class="play-icon-secondary"
+      name="play-skip-back-circle-outline"
+      ></ion-icon>
+      </a>
       </div>
-    </div>
-          `;
-  });
+      <div class="hoverable">
+      <a href="singleIOS.html">
+      <ion-icon name="radio-button-on-outline"></ion-icon>
+      
+      </a>
+      <button class="cart-remove">
+      <ion-icon name="trash-outline"></ion-icon>
+      
+      </button>
+      
+      
+      </div>
+      </div>
+      `;
+    });
 
-  istekContent.innerHTML = "";
-  istekContent.insertAdjacentHTML("beforeend", data.join(" "));
+    istekContent.innerHTML = "";
+    const istekContainer = document.createElement("div");
+    istekContainer.setAttribute("class", "istek-container");
+    istekContent.append(istekContainer);
+
+    istekContainer.insertAdjacentHTML("beforeend", data.join(" "));
+  }
 }
+
+// REMOVE FROM CART
+
+function removeFromCart() {
+  new Promise((resolve, reject) => {
+    setTimeout((resolve) => {
+      const removeCartBtns = document.querySelectorAll(".cart-remove");
+      console.log(removeCartBtns);
+      removeCartBtns.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          e.preventDefault();
+          console.log("clicked");
+
+          item.closest(".course").remove();
+
+          const wishlist = localStorage.getItem("wishlist");
+
+          let arr = [];
+          if (wishlist) {
+            arr = JSON.parse(wishlist);
+          }
+
+          const updatedData = arr.filter(
+            (el) => el !== item.closest(".course").dataset.id
+          );
+          console.log(updatedData);
+
+          localStorage.setItem("wishlist", JSON.stringify(updatedData));
+        });
+      });
+    }, 1000);
+  });
+}
+
+removeFromCart();
+
 createWishlist();
+//
